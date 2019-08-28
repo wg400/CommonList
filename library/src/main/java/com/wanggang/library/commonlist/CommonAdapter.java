@@ -1,4 +1,4 @@
-package com.wanggang.commonlist.library;
+package com.wanggang.library.commonlist;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +14,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonViewHolder> {
 
     /**
      * 数据源
-     * */
+     */
     private List<BaseViewTypeEntity> dataSource;
 
     public CommonAdapter() {
@@ -25,38 +23,13 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonViewHolder> {
 
     @Override
     public int getItemViewType(int position) {
-        return dataSource.get(position).getLayoutRes();
+        return dataSource.get(position).viewType;
     }
 
     @NonNull
     @Override
-    public CommonViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int position) {
-
-//        BaseViewTypeEntity entity = dataSource.get(position);
-        Log.d("tag", position + "");
-
-        View itemView = LayoutInflater.from(viewGroup.getContext())
-                .inflate(position, viewGroup, false);
-
-//        if (entity.getViewHolder() != null) {
-//            /**
-//             * 通过java的反射机制构造对象
-//             * */
-//            Constructor<?>[] constructors = entity.getViewHolder().getConstructors();
-//            try {
-//                return (CommonViewHolder) constructors[0].newInstance(itemView);
-//            } catch (InstantiationException e) {
-//                e.printStackTrace();
-//            } catch (IllegalAccessException e) {
-//                e.printStackTrace();
-//            } catch (InvocationTargetException e) {
-//                e.printStackTrace();
-//            }
-//        } else {
-            return new CommonViewHolder(itemView);
-//        }
-
-//        return null;
+    public CommonViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
+        return ViewHolderHelper.getViewHolderByViewType(viewGroup, viewType);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.wanggang.commonlist.library;
+package com.wanggang.library.commonlist;
 
 public class Constant {
 

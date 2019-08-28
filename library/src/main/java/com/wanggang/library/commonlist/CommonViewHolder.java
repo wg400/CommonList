@@ -1,4 +1,4 @@
-package com.wanggang.commonlist.library;
+package com.wanggang.library.commonlist;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
