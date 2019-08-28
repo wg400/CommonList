@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="adapter"
+            type="com.wanggang.commonlist.library.CommonAdapter" />
+        <variable
+            name="entity"
+            type="com.wanggang.commonlist.test.Test02Entity" />
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ff0000"
+        android:scaleType="center"
+        android:src="@mipmap/ic_launcher"/>
+</layout>
