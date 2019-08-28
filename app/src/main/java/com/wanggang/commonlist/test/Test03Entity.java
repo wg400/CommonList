@@ -1,7 +1,7 @@
 package com.wanggang.commonlist.test;
 
-import com.wanggang.commonlist.R;
-import com.wanggang.commonlist.library.BaseViewTypeEntity;
+import com.wanggang.commonlist.CommonAdapterEnum;
+import com.wanggang.library.commonlist.BaseViewTypeEntity;
 
 public class Test03Entity extends BaseViewTypeEntity {
 
@@ -43,7 +43,7 @@ public class Test03Entity extends BaseViewTypeEntity {
     }
 
     public Test03Entity() {
-        setLayoutRes(R.layout.holder_item_test03);
+        viewType = CommonAdapterEnum.TEST03.ordinal();
     }
 
 }

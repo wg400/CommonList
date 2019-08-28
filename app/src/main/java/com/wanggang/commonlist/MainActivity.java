@@ -4,13 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
-import com.wanggang.commonlist.library.BaseViewTypeEntity;
-import com.wanggang.commonlist.library.CommonAdapter;
-import com.wanggang.commonlist.library.Constant;
 import com.wanggang.commonlist.test.Test01Entity;
 import com.wanggang.commonlist.test.Test02Entity;
 import com.wanggang.commonlist.test.Test03Entity;
+import com.wanggang.library.commonlist.BaseViewTypeEntity;
+import com.wanggang.library.commonlist.CommonAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

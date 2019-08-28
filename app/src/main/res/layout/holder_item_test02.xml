@@ -5,7 +5,7 @@
     <data>
         <variable
             name="adapter"
-            type="com.wanggang.commonlist.library.CommonAdapter" />
+            type="com.wanggang.library.commonlist.CommonAdapter" />
         <variable
             name="entity"
             type="com.wanggang.commonlist.test.Test02Entity" />
