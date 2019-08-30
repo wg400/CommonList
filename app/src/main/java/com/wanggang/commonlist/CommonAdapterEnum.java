@@ -10,6 +10,7 @@ public enum CommonAdapterEnum {
     TEST01(R.layout.holder_item_test01),
     TEST02(R.layout.holder_item_test02),
     TEST03(R.layout.holder_item_test03),
+    TEST04(R.layout.holder_item_test04),
     PADDING12(R.layout.holder_padding12);
 
     public int layoutRes;

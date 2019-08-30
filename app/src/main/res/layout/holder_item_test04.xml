@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="adapter"
+            type="com.wanggang.library.commonlist.CommonAdapter" />
+        <variable
+            name="entity"
+            type="com.wanggang.commonlist.test.Test04Entity" />
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@{entity.title}"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:textSize="14sp"
+            android:gravity="right|center"
+            android:text="@{entity.text}"
+            android:textColor="@android:color/black"
+            android:hint="@{entity.hint}"
+            android:drawablePadding="16dp"
+            android:drawableRight="@drawable/icon_arrow_right"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="@{entity.showLine ? View.VISIBLE : View.GONE}"
+            android:layout_alignParentBottom="true"
+            android:background="#bebebe"/>
+    </RelativeLayout>
+</layout>

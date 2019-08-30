@@ -12,7 +12,6 @@ public class CommonViewHolder extends RecyclerView.ViewHolder {
 
     public CommonViewHolder(@NonNull View itemView) {
         super(itemView);
-
         try {
             // 若itemview不是databing布局，则会抛出异常
             mDataBinding = DataBindingUtil.bind(itemView);
@@ -29,11 +28,11 @@ public class CommonViewHolder extends RecyclerView.ViewHolder {
     public void convert(CommonAdapter adapter, BaseViewTypeEntity entity, int position) {
         if (mDataBinding != null) {
 
-            mDataBinding.setVariable(Constant.BR_ADAPTER, adapter);
+            mDataBinding.setVariable(ViewHolderHelper.BR_ADAPTER, adapter);
 
-            mDataBinding.setVariable(Constant.BR_ENTITY, entity);
+            mDataBinding.setVariable(ViewHolderHelper.BR_ENTITY, entity);
 
-            mDataBinding.setVariable(Constant.BR_POSITION, position);
+            mDataBinding.setVariable(ViewHolderHelper.BR_POSITION, position);
 
         }
     }

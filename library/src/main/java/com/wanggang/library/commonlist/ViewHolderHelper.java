@@ -1,6 +1,5 @@
 package com.wanggang.library.commonlist;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -15,6 +14,13 @@ public class ViewHolderHelper {
     private static Field holderField;
 
     public static Class enumClazz; //客户端layout和viewholder清单对应的class
+
+    /**
+     * mvvm框架生成的BR常量
+     * */
+    public static int BR_ADAPTER = 0;
+    public static int BR_ENTITY = 0;
+    public static int BR_POSITION = 0;
 
     /**
      * 通过view type来获取对应的viewholder

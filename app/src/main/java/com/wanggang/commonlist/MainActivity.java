@@ -1,9 +1,10 @@
 package com.wanggang.commonlist;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
 import com.wanggang.commonlist.test.Test01Entity;
 import com.wanggang.commonlist.test.Test02Entity;
 import com.wanggang.commonlist.test.Test03Entity;
